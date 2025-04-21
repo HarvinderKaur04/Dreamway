@@ -1,0 +1,39 @@
+<% layout("/layouts/boilerplate") -%>
+  
+
+    <div class="row-mt-3">
+        <h2 class="col-6 offset-3">SignUp on WanderLust</h2>
+        <div class="col-6 offset-3 mt-3">
+            <form method="post" action="/signup" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <lable for="username" class="form-label ">Username</lable>
+                    <input name="username" placeHolder="UserName" id="username" type="text" class="form-control " required> 
+                  
+                </div> 
+                <div class="mb-3">
+                    <lable for="email" class="form-label ">Email</lable>
+                    <input name="email" placeholder="Email" class="form-control "  id="email" type="email"required> 
+                 
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                       Invalid Email id
+                      </div>
+                </div> 
+                <div class="mb-3">
+                    <lable for="password" class="form-label ">Password</lable>
+                    <input name="password" placeHolder="Password" class="form-control"  id="password" type="password" required  minlength="8" maxlength="30"> 
+                    <div class="invalid-feedback">
+                        Password must be 8 to 10 characters.
+                    </div>
+                     
+                </div> 
+                <button class="btn btn-dark btn-add mt-3">SignUp</button>
+
+               
+
+            </form>
+
+        </div>
+    </div>        
