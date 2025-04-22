@@ -51,24 +51,24 @@ const listingSchema = new Schema({
     type:Schema.Types.ObjectId,
     ref:"User",
   },
-  // geometry:{
-  //   type:{
-  //     type:String, // don't do '{locaion:{type:string}}'
-  //     enum:["Point"], //location.type must be point
-  //     required:true,
-  //   },
-  //   coordinates:{
-  //     type:[Number],
-  //     required:true,
-  //   },
+  geometry:{
+    type:{
+      type:String, // don't do '{locaion:{type:string}}'
+      enum:["Point"], //location.type must be point
+      required:true,
+    },
+    coordinates:{
+      type:[Number],
+      required:true,
+    },
+  },
   // },
   // catagory:{
   //   type:String,
   //   enum:["rooms","treanding","IconicCities","mountains","Castles","AmazingPolls","Arctic"];
-  // }
+  }
  
-});
-
+);
 
 
 // Middleware of delete reviews with Listing

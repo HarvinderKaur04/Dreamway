@@ -126,7 +126,7 @@ body{
 
 
   /* Icons Nav Bar New */
-  #filters{
+  .filters{
     
     display:flex;
     flex-wrap: wrap;
