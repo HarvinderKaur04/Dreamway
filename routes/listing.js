@@ -18,7 +18,10 @@ router.route("/")
 
 //method for ("/new")
 // //NEW Route
-router.get("/new",isLoggedIn,ListingController.renderNewForm);   
+router.get("/new",isLoggedIn,ListingController.renderNewForm);  
+
+//  Search route BEFORE :id to avoid conflict
+router.get("/search", wrapAsync(ListingController.searchListings));
 
 // method for ("/:id")
 router

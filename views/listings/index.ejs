@@ -2,67 +2,122 @@
 
 
 <body>
-    <!-- <form method="GET" action="/listings/new">
+    <!--  <form method="GET" action="/listings/new">
         <button>Create New</button>
     </form> -->
     <!-- <h3>Listings</h3> - -->
-    <div class="filters">
-      <div class="filter">
-   
-        <div><i class="fa-solid fa-bed"></i></div>
-        <p>Rooms</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-fire"></i></div>
-        <p>Treanding</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-mountain-city"></i></div>
-        <p>Iconic Cities</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-mountain"></i></div>
-        <p>Mountains</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-brands fa-fort-awesome"></i>
+     <!----Search Slider ------->
+<div id="filters" class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-12 d-flex flex-wrap justify-content-start justify-content-md-center align-items-center">
+            <div id="filterSliderWrapper">
+                <button id="leftArrow" class="arrow-btn" aria-label="Previous" tabindex="0" disabled="">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div id="filterSlider">
+                    <div class="filter">
+                        <div><i class="fa-solid fa-fire"></i></div>
+                        <p>Trending</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-bed"></i></div>
+                        <p>Rooms</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-city"></i></div>
+                        <p>Iconic Cities</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-mountain-sun"></i></div>
+                        <p>Mountains</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-brands fa-fort-awesome"></i></div>
+                        <p>Castle</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-person-swimming"></i></div>
+                        <p>Arctics</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-tent"></i></div>
+                        <p>Camping</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-cow"></i></div>
+                        <p>Farms</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-hotel"></i></div>
+                        <p>Hotels</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-umbrella-beach"></i></div>
+                        <p>Beach</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-tree"></i></div>
+                        <p>Nature</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-snowflake"></i></div>
+                        <p>Winter</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-water"></i></div>
+                        <p>Lake</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-building"></i></div>
+                        <p>Apartment</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-house"></i></div>
+                        <p>House</p>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa-solid fa-mug-hot"></i></div>
+                        <p>Breakfast</p>
+                    </div>
+                    <!-- Add more icons as needed -->
+                </div>
+                <button id="rightArrow" class="arrow-btn" aria-label="Next" tabindex="0">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div> 
+            <div class="tax-toggle ms-auto">
+                <div class="form-check-reverse form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                    <label class="form-check-label" for="switchCheckDefault">Display total after
+                        taxes</label>
+                </div>
+            </div>
         </div>
-        <p>Castles</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-water-ladder"></i></div>
-        <p>Amazimg Polls</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-snowflake"></i></div>
-        <p>Arctic</p>
-        </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-tractor"></i></div>
-        <p>Farming</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-tent"></i></div>
-        <p>Campaning</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-umbrella-beach"></i></div>
-        <p>Beach</p>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-landmark-dome"></i></div>
-        <p>Historical Homes</p>
-      </div>
-      
-      
-      <div class="tax-toggle ">
-        <div class="form-check-reverse form-switch ">
-          
-          <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-          <label class="form-check-label" for="switchCheckDefault">Total after Tax</label>
-        </div>
-      </div>
     </div>
+</div>
+     <!-------filter slider-->
+<div class="container-fluid my-4">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="checkout-banner d-flex flex-column flex-md-row align-items-center justify-content-between p-4 rounded shadow-sm" style="background: linear-gradient(90deg, #ffb2c1 0%, #fff 100%);">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <i class="fa-solid fa-arrow-right-to-city fa-2x text-danger me-3"></i>
+                    <div>
+                        <h5 class="mb-1 fw-bold">Ready to book your next stay?
+                        </h5>
+                        <p class="mb-0 text-muted">Discover unique properties
+                            and book your dream getaway
+                            today!</p>
+                    </div>
+                </div>
+                <a href="/listings" class="btn btn-lg btn-gradient px-4 py-2 fw-bold">Explore
+                    Properties <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+      
+      
     
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
     <% for (let listing of allListings) { %>
@@ -99,3 +154,34 @@
     }
   });
 </script>
+
+<script>
+  const filterSlider = document.getElementById("filterSlider");
+  const leftArrow = document.getElementById("leftArrow");
+  const rightArrow = document.getElementById("rightArrow");
+
+  const scrollAmount = 200; // Change this for faster/slower scroll
+
+  leftArrow.addEventListener("click", () => {
+    filterSlider.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth"
+    });
+  });
+
+  rightArrow.addEventListener("click", () => {
+    filterSlider.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  });
+  function updateArrows() {
+  leftArrow.disabled = filterSlider.scrollLeft <= 0;
+  rightArrow.disabled = filterSlider.scrollLeft + filterSlider.clientWidth >= filterSlider.scrollWidth;
+}
+
+filterSlider.addEventListener("scroll", updateArrows);
+window.addEventListener("load", updateArrows);
+
+</script>
+

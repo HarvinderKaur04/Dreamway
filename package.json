@@ -2,6 +2,7 @@
   "engines": {
     "node": "v22.14.0"
   },
+  "start": "nodemon",
   "name": "majorproject",
   "version": "1.0.0",
   "description": "",
