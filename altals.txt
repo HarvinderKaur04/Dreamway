@@ -1,3 +1,1 @@
-u-harry4aug83
-p-9PzES3YBglHfH0HE
-mongodb+srv://harry4aug83:9PzES3YBglHfH0HE@cluster0.oxqe4vs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+mongodb+srv://dream:dream786H@cluster0.wgemkb5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

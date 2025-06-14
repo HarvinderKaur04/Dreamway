@@ -21,8 +21,7 @@ const User=require("./models/user.js")
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 
-// DataBase MongoDB
-// const MONGO_URL="mongodb://127.0.0.1:27017/wonderlust";
+
 
 const dburl=process.env.ATLASDB_URL;
 
