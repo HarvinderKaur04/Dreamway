@@ -94,7 +94,7 @@ app.use((req,res,next)=>{
 //  res.send(regUser);
 // });
 
-
+app.use("/",listingsRouter);
 app.use("/listings",listingsRouter);
 app.use("/listings/:id/reviews",reviewsRouter);
 app.use("/",userRouter);
